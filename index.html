@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Blessing!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Pacifico for heading, Inter for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background-color: #fce7f3; /* Light pink background */
+            color: #4a0e2e; /* Darker pink text */
+            line-height: 1.6;
+        }
+        .font-pacifico {
+            font-family: 'Pacifico', cursive;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 1.5rem; /* More rounded corners */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-image {
+            width: 100%;
+            height: 250px; /* Fixed height for gallery images */
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            border-radius: 0.75rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #f06292, #ab47bc); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-pink-400 to-purple-500 text-white py-6 shadow-lg rounded-b-3xl">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="font-pacifico lg:text-5xl text-3xl md:text-4xl  mb-2">Happy Birthday, Blessing!</h1>
+            <p class="text-xl md:text-2xl font-light">Wishing you a day filled with joy and laughter!</p>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto py-12 px-4">
+
+        <!-- Hero Section with Main Image -->
+        <section class="text-center mb-16">
+            <div class="card max-w-2xl mx-auto p-6">
+                <img src="https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/450537755_3773685169518711_4784970858196685406_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=iu9NWzVAQW0Q7kNvwGgQ0ki&_nc_oc=AdmTk260XckuXeeM3yYHVyEpuTlcV88U9S6frWE5RKcMApf18WJf33DELlPNRfBHbMA&_nc_zt=23&_nc_ht=scontent-los2-1.xx&_nc_gid=Qc8MY_ku2Rc71CYoz5kiEw&oh=00_AfSf-2lTJwTZkUziyzmvsT9deGk9Txh1cRSoLrp9gcWmSA&oe=6876B0F8" alt="Blessing on her birthday" class="w-full h-auto rounded-xl shadow-lg mb-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-pink-700 mb-4">A Special Day for a Special Person!</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Today, I celebrate you, Blessing! Your kindness, strength, and beautiful spirit light up the lives of everyone around you. May your birthday be as wonderful and amazing as you are.
+                </p>
+            </div>
+        </section>
+
+        <!-- Birthday Wishes Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-center mb-10 gradient-text font-pacifico">Warmest Wishes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Wish Card 1 -->
+                <div class="card p-6 text-center">
+                    <h3 class="text-2xl font-semibold text-pink-600 mb-3">Joy & Happiness</h3>
+                    <p class="text-gray-600">May your year ahead be filled with immense joy, boundless happiness, and countless reasons to smile.</p>
+                </div>
+                <!-- Wish Card 2 -->
+                <div class="card p-6 text-center">
+                    <h3 class="text-2xl font-semibold text-pink-600 mb-3">Success & Prosperity</h3>
+                    <p class="text-gray-600">Wishing you success in all your endeavors and prosperity in every step you take.</p>
+                </div>
+                <!-- Wish Card 3 -->
+                <div class="card p-6 text-center">
+                    <h3 class="text-2xl font-semibold text-pink-600 mb-3">Health & Love</h3>
+                    <p class="text-gray-600">May you be blessed with good health, unwavering love, and cherished moments with loved ones.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold text-center mb-10 gradient-text font-pacifico">Memories of Blessing</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Image 1 -->
+                <div class="card p-3">
+                    <img src="./Sis Blessing.jpg" alt="Blessing singing" class="gallery-image">
+                    <p class="text-center text-gray-600 mt-2 text-sm">A moment of worship</p>
+                </div>
+                <!-- Image 2 -->
+                <div class="card p-3">
+                    <img src="./Sister Blessing  2.jpg" alt="Blessing on stage" class="gallery-image">
+                    <p class="text-center text-gray-600 mt-2 text-sm">Grace on stage</p>
+                </div>
+                <!-- Image 3 -->
+                <div class="card p-3">
+                    <img src="./Sister Blessing 3.jpg" alt="Blessing in prayer" class="gallery-image">
+                    <p class="text-center text-gray-600 mt-2 text-sm">Deep in devotion</p>
+                </div>
+                <!-- Image 4 -->
+                <div class="card p-3">
+                    <img src="./Sister Blessing 5.jpg" alt="Blessing performing" class="gallery-image">
+                    <p class="text-center text-gray-600 mt-2 text-sm">Powerful performance</p>
+                </div>
+                <!-- Image 5 -->
+                <div class="card p-3">
+                    <img src="./Sister Blessing 6.jpg" alt="Blessing leading" class="gallery-image">
+                    <p class="text-center text-gray-600 mt-2 text-sm">Leading with passion</p>
+                </div>
+                <!-- Image 6 -->
+                <div class="card p-3">
+                    <img src="./Sister Blessing 7.jpg" alt="Blessing leading" class="gallery-image">
+                    <p class="text-center text-gray-600 mt-2 text-sm">Moment of Reflection</p>
+                </div>
+                <!-- Image 7 -->
+                <div class="card p-3">
+                    <img src="Gift.jpeg" alt="Blessing's portrait" class="gallery-image">
+                    <p class="text-center text-gray-600 mt-2 text-sm">Beautiful portrait</p>
+                </div>
+                <!-- Image 8 -->
+                <div class="card p-3">
+                    <img src="./Sister Blessing.jpg" alt="Blessing leading" class="gallery-image">
+                    <p class="text-center text-gray-600 mt-2 text-sm">Heartfelt Worship</p>
+                </div>
+                <!-- Placeholder for more images if needed -->
+                <div class="card p-3 hidden">
+                    <img src="https://placehold.co/400x250/e9d5ff/8b5cf6?text=More+Joy" alt="Placeholder image" class="gallery-image">
+                    <p class="text-center text-gray-600 mt-2 text-sm">More memories to come!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message from sender (Optional, can be customized) -->
+        <section class="text-center mb-16">
+            <div class="card max-w-xl mx-auto p-8 bg-pink-50">
+                <h2 class="text-3xl font-bold text-pink-700 mb-4">From David!</h2>
+                <p class="text-lg text-gray-800 italic">
+                    "To Blessing, a true blessing in my live. Thank you for being you. I love you dearly and wish you the happiest of birthdays!"
+                </p>
+                <p class="text-md text-gray-600 mt-4">- Your Friend</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-r from-pink-400 to-purple-500  text-white py-6 text-center mt-auto rounded-t-3xl shadow-inner">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Happy Birthday Blessing! All rights reserved.</p>
+            <p class="text-sm mt-2">Made with love for Blessing.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
